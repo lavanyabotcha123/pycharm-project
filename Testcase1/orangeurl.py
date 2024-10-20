@@ -21,8 +21,8 @@ driver = webdriver.Chrome(service=service)
 
 # Open the website
 driver.get("https://opensource-demo.orangehrmlive.com/")
-driver.find_element(By.NAME, "username").send_keys("Admin")
-driver.find_element(By.NAME, "password").send_keys("admin123")
+driver.find_element(By.XPATH, "username").send_keys("Admin")
+driver.find_element(By.XPATH, "password").send_keys("admin123")
 login_button = driver.find_element(By.XPATH, "//button[contains(text(), 'Login')]")
 
 
